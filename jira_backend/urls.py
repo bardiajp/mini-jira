@@ -7,4 +7,5 @@ urlpatterns = [
     path('docs/', SpectacularSwaggerView.as_view(url_name='schema')),
     path('redoc/', SpectacularRedocView.as_view(url_name='schema')),
     path('users/', include('accounts.urls')),
+    path('users/', include('issues.urls')),
 ]
